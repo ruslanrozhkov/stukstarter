@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
+  host: localhost
+
+development:
+  <<: *default
+  database: development_stukstarter
+
+test:
+  <<: *default
+  database: test_stukstarter
+
+production:
+  <<: *default
+database: production_stukstarter
