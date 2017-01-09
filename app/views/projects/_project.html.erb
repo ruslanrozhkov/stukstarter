@@ -2,12 +2,12 @@
   <div class="project-box">
 
     <div class="description-box">
-      <%= link_to image_tag(project.image_url, alt: project.name, width: '100%', height: '200px'), '#' %>
+      <%= link_to image_tag(project.image_url, alt: project.name, width: '100%', height: '200px'), project_path(project) %>
       <div class="title">
-        <%= link_to project.name, '#' %>
+        <%= link_to project.name, project_path(project) %>
       </div>
       <div class="description">
-        <%= project.description %>
+        <%= strip_tags(project.description) %>
       </div>
       <div class="project-bar">
         <div class="progress">
