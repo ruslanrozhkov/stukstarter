@@ -62,3 +62,4 @@ gem 'bootstrap-wysihtml5-rails'
 
 gem 'devise'
 gem 'annotate'
+gem 'date_validator'
