@@ -40,7 +40,7 @@
       <p><%= @project.description.html_safe %></p>
     </div>
     <div class="col-md-4">
-      <p>Rewards will be in here....</p>
+      <p><%= render @rewards %></p>
       <%= link_to 'Add Reward', new_project_reward_path(@project), class: 'btn btn-primary' %>
     </div>
   </div>
