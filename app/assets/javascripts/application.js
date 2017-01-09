@@ -17,4 +17,7 @@
 //= require bootstrap-sprockets
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales
+//= require moment
+//= require bootstrap-datetimepicker
+//= require pickers
 //= require_tree .
