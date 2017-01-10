@@ -20,4 +20,8 @@ class Project < ApplicationRecord
   has_many :rewards
 
   validates :name, :short_description, :description, :image_url, :goal, :expiration_date, presence: true
+
+  def pledges
+    rewards.flat_map(&:pledges)
+  end
 end

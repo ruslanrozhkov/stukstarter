@@ -25,6 +25,6 @@ class PledgesController < ApplicationController
   end
 
   def set_reward
-    @reward = @project.rewards.find(params[:reward_id])
+    @reward = @project.rewards.find_by_id(params[:reward_id])
   end
 end
