@@ -2,19 +2,19 @@
   <div class="row">
     <div class="col-xs-4 col-sm-12">
       <div class="val">
-        10
+        <%= @pledges.count %>
       </div>
       <div class="lab">Backers</div>
     </div>
     <div class="col-xs-4 col-sm-12">
       <div class="val">
-        10000$
+        <%= number_to_currency(@project.total_backed_amount, unit: '$', precision: 0) %>
       </div>
-      <div class="lab">Goal</div>
+      <div class="lab">Pledge of <%= number_to_currency(@project.goal, unit: '$', precision: 0) %> goal</div>
     </div>
     <div class="col-xs-4 col-sm-12">
       <div class="val">
-        4
+       <%= @project.days_to_go %>
       </div>
       <div class="lab">Days to go</div>
     </div>

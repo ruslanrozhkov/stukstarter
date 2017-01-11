@@ -1,3 +1,4 @@
+<% funded = project.funding_precentage %>
 <div class="col-md-4 col-sm-6 col-xs-12">
   <div class="project-box">
 
@@ -11,16 +12,16 @@
       </div>
       <div class="project-bar">
         <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-            <span class="sr-only">100% complete (Success)</span>
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<%= funded %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= funded %>%">
+            <span class="sr-only"><%= funded %> complete (Success)</span>
           </div>
         </div>
       </div>
       <div class="stats">
         <ul>
-          <li>100% <br><span class="label">funded</span></li>
-          <li>1000$ <br><span class="label">pledged</span></li>
-          <li>10 <br><span class="label">days to go</span></li>
+          <li><%= funded %>% <br><span class="label">funded</span></li>
+          <li>$<%= project.total_backed_amount %> <br><span class="label">pledged</span></li>
+          <li><%= project.days_to_go %> <br><span class="label">days to go</span></li>
         </ul>
       </div>
     </div>

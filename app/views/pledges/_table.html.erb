@@ -9,7 +9,7 @@
   </thead>
   <tbody>
   <% if pledges.any?  %>
-  <% pledges.each do |p| %>
+  <% pledges.each do |pledge| %>
       <%= render 'pledge', pledge: pledge %>
           <% end %>
   <% else %>

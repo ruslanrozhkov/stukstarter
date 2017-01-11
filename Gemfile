@@ -66,3 +66,6 @@ gem 'date_validator'
 gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 gem 'braintree', '~> 2.70.0'
+gem 'delayed_job_active_record'
+gem 'friendly_id'
+gem 'cancancan'
